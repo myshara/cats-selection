@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Preferences: Find Your Favourite Kitty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen">
+        <h1>🐾 Welcome to Paws & Preferences 🐾</h1>
+        <p>Meet the cutest cats around — swipe to find your purr-fect match!</p>
+        <button id="start-btn">Start Exploring</button>
+    </div>
+
+    <!-- Main App -->
+    <div id="app" class="hidden">
+        <h1>Paws & Preferences</h1>
+        <p>Find the right cats for you!❤️</p>
+
+        <div id="stack"></div>
+
+        <div id="controls">
+            <button id="reload-btn">Reload Cats</button>
+            <button id="back-btn">Back to Home</button>
+        </div>
+
+        <div id="summary" class="hidden">
+            <h2>You liked <span id="count"></span> cats!</h2>
+            <div id="liked-cats"></div>
+            <div class="summary-buttons">
+                <button id="restart-btn">Start Over</button>
+                <button id="back-home-btn">Back to Home</button>
+            </div>
+        </div>
+    </div>
+
+   <!-- Background Video -->
+<video autoplay muted loop id="bg-video">
+    <source src="blackcat.mp4" type="video/mp4">
+</video>
+
+<footer>
+  <p>© 2025 Paws & Preferences. Cat images from <a href="https://cataas.com" target="_blank">cataas.com</a>.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
